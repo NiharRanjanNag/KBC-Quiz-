@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+    width:100%;
+    height:100%;
+    display: flex;
 }
+.qusbox{
+    width:75%;
+    height:100vh;
+    background-image:url('../public/kbc.png');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+.amountbox{
+    width:25%;
+    background: #030c64;
+    color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer{
+      width:100%;
+      height:50%;
+      position: relative;
+}
+.timer .ring{
+    width:70px;
+    height:70px;
+    border:2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    color:#fe0606;
+    bottom: 0;
+    left:15rem;
+}
+.qusetions{
+      width:100%;
+      height:50%;
+      display: flex;
+      justify-content: center;
+      
+}
+.list{
+    width:100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.6px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.listitem{
+      width:90%;
+      padding: 10px;
+      /* border:2px solid rgb(236, 10, 10);
+      background: #fc0606; */
+      display: flex;
+      gap:2rem;
+      cursor: pointer;
+      border-radius: 5px;
+}
+.active{
+  width:90%;
+  padding: 10px;
+  border:2px solid rgb(236, 10, 10);
+  background: #fc0606;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap:2rem;
+  cursor: pointer;
+  border-radius: 5px;
 }

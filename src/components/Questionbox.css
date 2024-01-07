@@ -1,0 +1,34 @@
+.innerquestion{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: .5rem;
+     gap:5rem;
+}
+.qusetion{
+     border:2px solid rgb(250, 247, 247);
+     color:#fff;
+     padding: .7rem 10rem;
+     border-radius: 10px;
+     background:  linear-gradient(180deg,#26026d,#0f0f0f);
+     font-size: 25px;
+}
+.answars{
+     width:80%;
+     color:#fff;
+     padding: 10px;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap:10px;
+     
+}
+.answar{
+     padding: .6rem 7rem;
+     background: #26026d;
+     border-radius: 10px;
+     border:2px solid #fff;
+     cursor: pointer;
+}
+ 
